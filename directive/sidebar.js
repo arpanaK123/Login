@@ -1,1 +1,6 @@
-var app=("sidebar",[])
+app.directive("sidebar",function()
+{
+  return{
+    templateUrl:"template/sideBar.html"
+  }
+})
