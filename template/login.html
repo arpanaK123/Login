@@ -10,8 +10,9 @@
             <md-input-container class="md-block">
               <label>Login</label>
               <input type="text"
-              name="email" ng-model="email" placeholder="Enter email"
-              ng-pattern="/^\w[^_]+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"required/>
+              name="email" ng-model="userEmail" placeholder="Enter email"
+              ng-pattern="/^\w[^_]+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
+              required/>
               <div ng-messages="loginForm.email.$error">
                 <div ng-message="required">Emailid Required</div>
               </div>
@@ -19,13 +20,14 @@
             <md-input-container class="md-block">
               <label>Password</label>
               <input type="password"
+              ng-change="comparePassword(password,email)"
                name="password" ng-model="password" placeholder="password" required
-              minLength="6" maxlength="16"/>
+              minLength="6" maxlength="16" />
               <div ng-messages="loginForm.password.$error">
                 <div ng-message="required">Password Required(min length:06, maxlength:16)</div>
               </div>
             </md-input-container>
-            <md-button ng-disabled="!loginForm.$valid " ng-click="submit() " class="md-raised md-primary ">&nbsp Login &nbsp
+            <md-button ng-disabled="!loginForm.$valid  || isMatchpasswordwithemail " ng-click="submit() " class="md-raised md-primary ">&nbsp Login &nbsp
             </md-button>
           </form>
         </md-card-content>
