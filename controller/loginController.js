@@ -9,9 +9,9 @@ $scope.submit = function(){
 $scope.comparePassword=function(password,userEmail){
   if(password && userEmail)
   {
-    const emailStr=userEmail.subString(0,3).trim().toLowerCase();
-    const passwordStr=password.subString(0,3).trim().toLowerCase();
-    if(emailStr!==passwordStr)
+    const emailstr=userEmail.substring(0,3).trim().toLowerCase();
+    const passwordstr=password.substring(0,3).trim().toLowerCase();
+    if(emailstr!==passwordstr)
     {  $scope.isMatchpasswordwithemail=false;
      console.log("password not match");
     }
