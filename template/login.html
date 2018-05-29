@@ -20,7 +20,7 @@
             <md-input-container class="md-block">
               <label>Password</label>
               <input type="password"
-              ng-change="comparePassword(password,email)"
+              ng-change="comparePassword(password,userEmail)"
                name="password" ng-model="password" placeholder="password" required
               minLength="6" maxlength="16" />
               <div ng-messages="loginForm.password.$error">
