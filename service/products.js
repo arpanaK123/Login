@@ -5,8 +5,8 @@ app.service('products',function($http)
     return $http.get("products.json").then(
       function(response)
       {
-        console.log(response.data);
-        return response;
+        // console.log(response.data);
+        return response.data;
       });
   }
 });
