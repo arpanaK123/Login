@@ -7,17 +7,17 @@ $scope.submit = function(){
   console.log($scope.password);
 };
 $scope.comparePassword=function(password,userEmail){
-  if(password && email)
+  if(password && userEmail)
   {
-    const emailString=userEmail.subString(0,3).trim().toLowerCase();
-    const passwordString=password.subString(0,3).trim().toLowerCase();
-    if(emailString!==passwordString)
+    const emailStr=userEmail.subString(0,3).trim().toLowerCase();
+    const passwordStr=password.subString(0,3).trim().toLowerCase();
+    if(emailStr!==passwordStr)
     {  $scope.isMatchpasswordwithemail=false;
-     console.log(password not match);
+     console.log("password not match");
     }
     else
       {  $scope.isMatchpasswordwithemail=true;
-        console.log(password match);
+        console.log("password match");
       }
     }
   };
