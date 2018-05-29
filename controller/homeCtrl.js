@@ -1,4 +1,8 @@
-app.controller('homeCtrl',function($scope,products){
-products.getData();
-console.log("hii !");
+app.controller('homeCtrl',function( $scope , products , $mdSidenav){
+  products.getData();
+  $scope.toggleLeft = function () {
+       $mdSidenav('left').toggle();
+
+  }
+  console.log("hii !");
 });
