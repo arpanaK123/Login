@@ -2,70 +2,23 @@
 <md-content layout-margin class="sideBarContent">
 <h4>Manufacturer</h4>
 <hr>
-<div ng-repeat="mobile in allMobilesInfo">
-<md-checkbox>{{mobile.specs.manufacturer}}</md-checkbox>
+<div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'manufacturer'">
+<md-checkbox>{{mobile}}</md-checkbox>
 </div>
 <h4>Storage</h4>
 <hr>
-<div ng-repeat="mobile in allMobilesInfo">
-<md-checkbox>{{mobile.specs.storage}}</md-checkbox>
+<div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'storage'">
+<md-checkbox>{{mobile}}</md-checkbox>
 </div>
 <h4>Os</h4>
 <hr>
-<div ng-repeat="mobile in allMobilesInfo">
-<md-checkbox>{{mobile.specs.os}}</md-checkbox>
+<div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'os'">
+<md-checkbox>{{mobile}}</md-checkbox>
 </div>
 <h4>Camera</h4>
 <hr>
-<div ng-repeat="mobile in allMobilesInfo">
-<md-checkbox>{{mobile.specs.camera}}</md-checkbox>
+<div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'camera'">
+<md-checkbox>{{mobile}}</md-checkbox>
 </div>
 </md-content>
 </md-sidenav>
-
-<!-- <md-sidenav style="position:fixed;margin-top:63px" md-component-id="left" class="sideBar">
-  <h4>Manufacturer</h4>
-  <hr>
-  <div ng-repeat="mobile in products"><md-checkbox>{{mobile.specs.Storage}}</md-checkbox>
-  </div> -->
-<!--
-<div>
-  <section layout="row" flex>
-    <md-sidenav md-component-id="left" class="md-sidenav-left">
-      <form>
-        <md-input-container>
-          <md-toolbar class="md-theme-light">
-          <h1 class="md-toolbar-tools"  style="padding-right;padding-right: 173px;">Mobile Details</h1>
-        </md-toolbar>
-        <h2> Brand</h2>
-        </md-input-container>
-        <div>
-                  <md-checkbox aria-label="Sony Xperia Z3">Sony Xperia Z3 </md-checkbox><br>
-                  <md-checkbox aria-label="Iphone 6">Iphone 6 </md-checkbox><br>
-                  <md-checkbox aria-label="HTC One M8">HTC One M8</md-checkbox><br>
-                  <md-checkbox aria-label="Galaxy Alpha">Galaxy Alpha</md-checkbox><br>
-                  <md-checkbox aria-label="Nokia Lumia">Nokia Lumia</md-checkbox><br>
-                  <md-checkbox aria-label="Zte Nubia">Zte Nubia</md-checkbox>
-       </div>
-       <div>
-         <h2> OS </h2>
-         <md-checkbox aria-label="IOS">IOS </md-checkbox><br>
-         <md-checkbox aria-label="Android">Android</md-checkbox>
-       </div>
-<div>
-  <h2>Camera</h2>
-  <md-checkbox aria-label="5">5</md-checkbox><br>
-  <md-checkbox aria-label="8">8  </md-checkbox> <br>
-  <md-checkbox aria-label="12">12</md-checkbox> <br>
-  <md-checkbox aria-label="15">15</md-checkbox>
-</div>
-<div><h2>Storage</h2>
-  <md-checkbox aria-label="16">16</md-checkbox><br>
-  <md-checkbox aria-label="32">32  </md-checkbox>
-</div>
-      </form>
-    </md-sidenav>
-
-  </section>
-
-</div> -->
