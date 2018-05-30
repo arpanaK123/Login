@@ -1,7 +1,7 @@
 <div layout="row" layout-wrap layout-align="center">
   <md-card ng-repeat="info in allMobilesInfo">
     <md-card-content layout="column" layout-align="center center">
-      <img style="height:300px;width:350px" img-src={{info.image.small}} class="md-card-image">
+      <img style="height:300px;width:350px" img-src={{info.images}} class="md-card-image">
       <div class="md-toolbar-tools usableTool" layout-align="center center">
         <table style="width:100%">
           <tr>
@@ -25,5 +25,6 @@
             <td>Camera</td>
             <td>{{info.specs.camera}} Pixel</td>
           </tr>
+        </tr>
     </md-card-content>
   </md-card>
