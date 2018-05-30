@@ -11,6 +11,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         url: '/home',
         templateUrl:'template/home.html',
         controller: 'homeCtrl'
-      });
+      })
+      .state('home.dashBoard', {
+          url: '/dashBoard',
+          templateUrl:'template/dashBoard.html',
+          controller: 'dashBoardCtrl'
+        });
   $urlRouterProvider.otherwise('/login');
 }]);

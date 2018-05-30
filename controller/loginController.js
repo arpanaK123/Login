@@ -2,7 +2,7 @@ app.controller('loginCtrl',function($scope,$state){
   $scope.isMatchpasswordwithemail=false;
 $scope.submit = function(){
 
-  $state.go('home');
+  $state.go('home.dashBoard');
   console.log($scope.useremail);
   console.log($scope.password);
 };
@@ -13,7 +13,7 @@ $scope.comparePassword=function(password,useremail){
   var userId=useremail.substr(0,index);
   var emailArr=Array.from(userId);
   var passwordArr=Array.from(password);
-  var charMatch=emailArr.filter(functio(emailchar)
+  var charMatch=emailArr.filter(function(emailchar)
 {
   return passwordArr.find(function(passwordChar)
 {
