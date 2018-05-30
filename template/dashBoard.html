@@ -1,14 +1,13 @@
 <div layout="row" layout-wrap layout-align="center">
   <md-card ng-repeat="info in allMobilesInfo">
     <md-card-content layout="column" layout-align="center center">
-      <img style="height:300px;width:350px" img-src={{info.image.small}} class="md-card-image">
+      <img style="height:350px;width:300px" ng-src={{info.image.small}} class="md-card-image">
       <div class="md-toolbar-tools usableTool" layout-align="center center">
         <table style="width:100%">
           <tr>
             <td>price</td>
             <td>${{info.price}}</td>
           </tr>
-          <tr>
           <tr>
             <td>Manufacturer</td>
             <td>{{info.specs.manufacturer}}</td>
@@ -25,6 +24,7 @@
             <td>Camera</td>
             <td>{{info.specs.camera}} Pixel</td>
           </tr>
-        </tr>
+        </table>
+      </div>
     </md-card-content>
   </md-card>
