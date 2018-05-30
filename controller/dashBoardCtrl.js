@@ -1,1 +1,2 @@
-app.controller('dashBoardCtrl',function($scope,)
+app.controller('dashBoardCtrl',function($scope){
+});
