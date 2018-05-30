@@ -1,8 +1,8 @@
-table td{
-  border: 1px,solid;
+table, td{
+  border: 1px solid #A3B2C7;
   border: collapse:collapse;
 }
 td{
-  padding:5px;
+  padding: 5px;
   text-align: left;
 }
