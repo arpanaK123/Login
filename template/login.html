@@ -10,7 +10,7 @@
             <md-input-container class="md-block">
               <label>Login</label>
               <input type="text"
-              name="email" ng-model="userEmail" placeholder="Enter email"
+              name="email" ng-model="useremail" placeholder="Enter email"
               ng-pattern="/^\w[^_]+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
               required/>
               <div ng-messages="loginForm.email.$error">
@@ -20,7 +20,7 @@
             <md-input-container class="md-block">
               <label>Password</label>
               <input type="password"
-              ng-change="comparePassword(password,userEmail)"
+              ng-change="comparePassword(password,useremail)"
                name="password" ng-model="password" placeholder="password" required
               minLength="6" maxlength="16" />
               <div ng-messages="loginForm.password.$error">

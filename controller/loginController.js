@@ -3,15 +3,24 @@ app.controller('loginCtrl',function($scope,$state){
 $scope.submit = function(){
 
   $state.go('home');
-  console.log($scope.userEmail);
+  console.log($scope.useremail);
   console.log($scope.password);
 };
-$scope.comparePassword=function(password,userEmail){
-  if(password && userEmail)
+$scope.comparePassword=function(password,useremail){
+  if(password && useremail)
   {
-    const emailstr=userEmail.substring(0,3).trim().toLowerCase();
-    const passwordstr=password.substring(0,3).trim().toLowerCase();
-    if(emailstr!==passwordstr)
+  var index=useremail.indexOf('@');
+  var userId=useremail.substr(0,index);
+  var emailArr=Array.from(userId);
+  var passwordArr=Array.from(password);
+  var charMatch=emailArr.filter(functio(emailchar)
+{
+  return passwordArr.find(function(passwordChar)
+{
+  return passwordChar===emailchar;
+});
+});
+    if(!charMatch.length)
     {  $scope.isMatchpasswordwithemail=false;
      console.log("password not match");
     }
