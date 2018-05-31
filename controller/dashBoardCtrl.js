@@ -1,4 +1,4 @@
-app.controller('dashBoardControll',function($scope,$mdDialog){
+app.controller('dashBoardCtrl',function($scope,$mdDialog){
   $scope.showMore = function($event,info)
   {
     $mdDialog.show({
