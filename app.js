@@ -15,7 +15,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
       .state('home.dashBoard', {
           url: '/dashBoard',
           templateUrl:'template/dashBoard.html',
-          controller: 'dashBoardCtrl'
+          controller: 'dashboardController'
         });
   $urlRouterProvider.otherwise('/login');
 }]);

@@ -3,16 +3,16 @@ app.controller('dashboardController', function ($scope, $mdDialog) {
     $mdDialog.show({
       locals:{data : info},
       controller: dialogController,
-      templateUrl: 'template/dialogbox.html',
+      templateUrl: 'template/dialogBox.html',
        parent: angular.element(document.body),
       targetEvent: event,
       clickOutsideToClose:true,
     });
 };
 function dialogController($scope, data, $mdDialog) {
-$scope.data = data;
-$scope.cancel = function() {
-$mdDialog.cancel();
-};
-}
+     $scope.data = data;
+    $scope.cancel = function() {
+    $mdDialog.cancel();
+   };
+  }
 });
