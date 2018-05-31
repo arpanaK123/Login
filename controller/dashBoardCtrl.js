@@ -1,8 +1,9 @@
-app.controller('dashBoardCtrl',function($scope,$mdDialog){
-  $scope.showMore = function(event,info)
-  {$mdDialog.show({
+app.controller('dashBoardControll',function($scope,$mdDialog){
+  $scope.showMore = function($event,info)
+  {
+    $mdDialog.show({
     locals:(data:info),
-    controller:dialogCOntroller,
+    controller:dialogController,
     templateUrl: 'template/dialog.html',
     parent: angular.element(document.body),
     targetEvent: event,
@@ -10,7 +11,7 @@ app.controller('dashBoardCtrl',function($scope,$mdDialog){
   });
 
 };
-function dialogCOntroller($scope,data,$mdDialog)
+function dialogController($scope,data,$mdDialog)
 {
   $scope.data=data;
   $scope.cancel=function()
