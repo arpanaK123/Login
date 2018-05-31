@@ -5,7 +5,7 @@
     <div class="md-toolbar-tools usableTool" layout-align="center center">{{info.name}}</div>
       <table style="width:100%">
         <tr>
-          <td>price</td>
+          <td>Price</td>
           <td>${{info.price}}</td>
         </tr>
         <tr>
@@ -25,5 +25,6 @@
           <td>{{info.specs.camera}}</td>
         </tr>
       </table>
+      <md-button class="md-primary md-raised" ng-click="showMore($event,info)">Buy</md-button>
     </md-card-content>
   </md-card>
