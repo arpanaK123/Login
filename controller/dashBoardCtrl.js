@@ -1,10 +1,10 @@
 app.controller('dashBoardCtrl',function($scope,$mdDialog){
-  $scope.showMore = function($event,info)
+  $scope.showMore = function(event,info)
   {
     $mdDialog.show({
     locals:(data:info),
     controller:dialogController,
-    templateUrl: 'template/dialog.html',
+    templateUrl: 'template/dialogBox.html',
     parent: angular.element(document.body),
     targetEvent: event,
      clickOutsideToClose:true;
