@@ -39,8 +39,8 @@ $scope.onDisplaySelectedItem = function(specsValue, allData) {
       //if item is selected in sidebar then filter data in dashBoard
       $scope.allMobilesInfo = allData.filter(function(obj) {
         return specsArr.find(function(item) {
-            return obj;
-          }
+
+
           if (obj.specs.manufacturer === item) {
             return obj;
           }
@@ -50,15 +50,15 @@ $scope.onDisplaySelectedItem = function(specsValue, allData) {
           }
           if(obj.specs.os===item)
           {
-            return obj;s
+            return obj;
           }
           if(obj.specs.camera===item)
           {
             return obj;
-          })
+          }})
       });
     }
-    else 
+    else
       {
         $scope.allMobilesInfo=$scope.sideMenuArr;
       }
