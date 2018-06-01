@@ -18,3 +18,7 @@ products.getData().then(function(response){
   }
   console.log("hii !");
 });
+// var specsArr=[]
+// $scope.onDisplaySelectedItem=function(specsValue,allData){
+// console.log('specsValue:'specsValue','allData:'allData);
+// }

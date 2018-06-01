@@ -1,30 +1,15 @@
 <div layout="row" layout-wrap layout-align="center">
   <md-card ng-repeat="info in allMobilesInfo">
     <md-card-content layout="column" layout-align="center center">
-      <img style="height:350px;width:300px" ng-src={{info.image.small}} class="md-card-image">
+      <img style="height:250px;width:220px" ng-src={{info.image.small}} class="md-card-image">
       <div class="md-toolbar-tools usableTool" layout-align="center center">{{info.name}}</div>
-      <table style="width:100%">
-        <tr>
-          <td>Price</td>
-          <td>${{info.price}}</td>
-        </tr>
-        <tr>
-          <td>Manufacture</td>
-          <td>{{info.specs.manufacturer}}</td>
-        </tr>
-        <tr>
-          <td>Storage</td>
-          <td>{{info.specs.storage}}</td>
-        </tr>
-        <tr>
-          <td>OS</td>
-          <td>{{info.specs.os}}</td>
-        </tr>
-        <tr>
-          <td>Camera</td>
-          <td>{{info.specs.camera}}</td>
-        </tr>
-      </table>
+      <div class="card-info">
+        <p>Price: ${{info.price}}</p>
+        <p>Manufacture: {{info.specs.manufacturer}}</p>
+        <p>Storage: {{info.specs.storage}}</p>
+        <p>OS: {{info.specs.os}}</p>
+        <p>Camera: {{info.specs.camera}} Pixel</p>
+      </div>
       <md-button class="md-primary md-raised" ng-click="showMore($event,info)">Buy</md-button>
     </md-card-content>
   </md-card>

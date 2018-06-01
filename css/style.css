@@ -1,12 +1,10 @@
-table, td{
-  border: 1px solid #A3B2C7;
-   border-collapse: collapse;
-}
-td{
-  padding: 5px;
-  text-align: left;
-}
-md-card-content: hover{
+
+md-card-content:hover{
   box-shadow: 0 0 35px 0 #d8d8d8;
-  border: 1px solid lightcyan;
+}
+.md-card-image{
+  padding:20px;
+}
+.md-card-image:hover{
+  padding:40px;
 }
