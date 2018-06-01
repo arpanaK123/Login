@@ -6,5 +6,9 @@ md-card-content:hover{
   padding:20px;
 }
 .md-card-image:hover{
-  padding:40px;
+  padding:0px !important;
+}
+.card-info{
+  font-size: 12px;
+  font-weight: 600;
 }
