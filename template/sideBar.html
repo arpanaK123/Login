@@ -28,28 +28,28 @@
   <md-content layout-margin class="sideBarContent">
     <h4>Manufacturer</h4>
     <hr>
-    <div ng-repeat="menuobj in sideMenuArr | unique:'manufacturer'">
+    <div ng-repeat="menuobj in sideMenuArr | removeDuplicate:'manufacturer'">
       <md-checkbox <ng-click="onDisplaySelectedItem(menuobj.specs.manufacturer,sideMenuArr)">
         {{menuobj.specs.manufacturer}}
       </md-checkbox>
     </div>
     <h4>Storage</h4>
     <hr>
-    <div ng-repeat="menuobj in sideMenuArr | unique:'storage'">
+    <div ng-repeat="menuobj in sideMenuArr | removeDuplicate:'storage'">
       <md-checkbox <ng-click="onDisplaySelectedItem(menuobj.specs.storage,sideMenuArr)">
           {{menuobj.specs.storage}}
       </md-checkbox>
     </div>
     <h4>OS</h4>
     <hr>
-    <div ng-repeat="menuobj in sideMenuArr | unique:'os'">
+    <div ng-repeat="menuobj in sideMenuArr | removeDuplicate:'os'">
       <md-checkbox <ng-click="onDisplaySelectedItem(menuobj.specs.os,sideMenuArr)">
           {{menuobj.specs.os}}
       </md-checkbox>
     </div>
     <h4>Camera</h4>
     <hr>
-    <div ng-repeat="menuobj in sideMenuArr | unique:'camera'">
+    <div ng-repeat="menuobj in sideMenuArr | removeDuplicate:'camera'">
       <md-checkbox <ng-click="onDisplaySelectedItem(menuobj.specs.camera,sideMenuArr)">
           {{menuobj.specs.camera}}
       </md-checkbox>

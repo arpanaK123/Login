@@ -60,5 +60,5 @@ $scope.onDisplaySelectedItem = function(specsValue, allData) {
   }
   console.log('filterData:', $scope.allMobilesInfo);
   console.log('selected specific item in side menu:',specsArr);
-
-};
+}
+});
