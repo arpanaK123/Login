@@ -10,6 +10,7 @@ app.controller('homeCtrl', function($scope, products, $mdSidenav) {
   products.getData()
     .then(function(response) {
       $scope.allMobilesInfo = response;
+      $scope.sideMenuArr = response;
       console.log('$scope.jsonData', $scope.allMobilesInfo);
     })
 
