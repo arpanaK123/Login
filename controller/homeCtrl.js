@@ -25,9 +25,7 @@ app.controller('homeCtrl', function($scope, products, $mdSidenav) {
 });
 var specsArr = [];
 $scope.onDisplaySelectedItem = function(specsValue, allData) {
-// console.log('specsValue:'
-//   specsValue, 'allData:'
-//   allData) {
+
   //finding the index of selected item
   var index = specsArr.indexOf(specsValue)
   if (index !== -1) {
@@ -62,5 +60,5 @@ $scope.onDisplaySelectedItem = function(specsValue, allData) {
   }
   console.log('filterData:', $scope.allMobilesInfo);
   console.log('selected specific item in side menu:',specsArr);
+
 };
-});
