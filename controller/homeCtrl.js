@@ -22,7 +22,7 @@ app.controller('homeCtrl', function($scope, products, $mdSidenav) {
 
   }
   console.log("hii !");
-});
+// });
 var specsArr = [];
 $scope.onDisplaySelectedItem = function(specsValue, allData) {
 
