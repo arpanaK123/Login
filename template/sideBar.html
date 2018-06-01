@@ -1,24 +1,54 @@
+<!-- <md-sidenav style="position:fixed;margin-top:63px;" md-component-id="left" class="sideBar">
+  <md-content layout-margin class="sideBarContent">
+    <h4>Manufacturer</h4>
+    <hr>
+    <div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'manufacturer'">
+      <md-checkbox>{{mobile}}</md-checkbox>
+    </div>
+    <h4>Storage</h4>
+    <hr>
+    <div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'storage'">
+      <md-checkbox>{{mobile}}</md-checkbox>
+    </div>
+    <h4>Os</h4>
+    <hr>
+    <div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'os'">
+      <md-checkbox>{{mobile}}</md-checkbox>
+    </div>
+    <h4>Camera</h4>
+    <hr>
+    <div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'camera'">
+      <md-checkbox>{{mobile}}</md-checkbox>
+    </div>
+  </md-content>
+</md-sidenav> -->
+
+
 <md-sidenav style="position:fixed;margin-top:63px;" md-component-id="left" class="sideBar">
-<md-content layout-margin class="sideBarContent">
-<h4>Manufacturer</h4>
-<hr>
-<div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'manufacturer'">
-<md-checkbox>{{mobile}}</md-checkbox>
-</div>
-<h4>Storage</h4>
-<hr>
-<div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'storage'">
-<md-checkbox>{{mobile}}</md-checkbox>
-</div>
-<h4>Os</h4>
-<hr>
-<div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'os'">
-<md-checkbox>{{mobile}}</md-checkbox>
-</div>
-<h4>Camera</h4>
-<hr>
-<div ng-repeat="mobile in allMobilesInfo | removeDuplicate:'camera'">
-<md-checkbox>{{mobile}}</md-checkbox>
-</div>
-</md-content>
+  <md-content layout-margin class="sideBarContent">
+    <h4>Manufacturer</h4>
+    <hr>
+    <div ng-repeat="menuobj in sideMenuArr | unique:'manufacturer'">
+      <md-checkbox <ng-click="onDisplaySelectedItem(menuobj.specs.manufacturer,sideMenuArr)">
+      </md-checkbox>
+    </div>
+    <h4>Storage</h4>
+    <hr>
+    <div ng-repeat="menuobj in sideMenuArr | unique:'storage'">
+      <md-checkbox <ng-click="onDisplaySelectedItem(menuobj.specs.storage,sideMenuArr)">
+      </md-checkbox>
+    </div>
+    <h4>OS</h4>
+    <hr>
+    <div ng-repeat="menuobj in sideMenuArr | unique:'os'">
+      <md-checkbox <ng-click="onDisplaySelectedItem(menuobj.specs.os,sideMenuArr)">
+      </md-checkbox>
+    </div>
+    <h4>Camera</h4>
+    <hr>
+    <div ng-repeat="menuobj in sideMenuArr | unique:'camera'">
+      <md-checkbox <ng-click="onDisplaySelectedItem(menuobj.specs.camera,sideMenuArr)">
+      </md-checkbox>
+    </div>
+  </md-content>
 </md-sidenav>

@@ -1,6 +1,5 @@
-app.directive("toolbar",function()
-{
-  return{
+app.directive("toolbar", function() {
+  return {
     templateUrl: "template/toolBar.html"
   }
 })

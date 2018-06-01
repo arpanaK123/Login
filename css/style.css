@@ -1,14 +1,17 @@
-
-md-card-content:hover{
+md-card-content:hover {
   box-shadow: 0 0 35px 0 #d8d8d8;
+  background-color: #e2e7e9;
 }
-.md-card-image{
-  padding:20px;
+
+.md-card-image {
+  padding: 20px;
 }
-.md-card-image:hover{
-  padding:0px !important;
+
+.md-card-image:hover {
+  padding: 0px !important;
 }
-.card-info{
+
+.card-info {
   font-size: 12px;
   font-weight: 600;
 }
