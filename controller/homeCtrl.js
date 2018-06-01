@@ -58,7 +58,7 @@ $scope.onDisplaySelectedItem = function(specsValue, allData) {
           })
       });
     }
-    else {
+    else 
       {
         $scope.allMobilesInfo=$scope.sideMenuArr;
       }
