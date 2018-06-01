@@ -6,3 +6,7 @@ td{
   padding: 5px;
   text-align: left;
 }
+<md-card-content: hover{
+  box-shadow: 0 0 35px 0 #d8d8d8;
+  border: 1px solid lightcyan;
+}
