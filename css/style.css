@@ -20,7 +20,7 @@
   margin-left: 325px;
 }
 
-md-sidenav, sideBarContent {
+md-sidenav, .sideBarContent {
   background-color: #2a3f54;
   color: white;
 }
