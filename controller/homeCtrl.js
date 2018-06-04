@@ -40,7 +40,7 @@ app.controller('homeCtrl', function($scope, $mdSidenav, products) {
     $scope.sideMenuArr = response;
     console.log('JSON response: ', response);
   });
-
+  var specsArr = [];
   $scope.onDisplaySelectedItems = function(specsValue, allData) {
     console.log('specsValue:', specsValue, ', allData:', allData);
     var index = specsArr.indexOf(specsValue); // finding the index of selected item.
