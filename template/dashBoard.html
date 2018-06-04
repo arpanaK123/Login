@@ -1,36 +1,17 @@
-<!-- <div layout="row" layout-wrap layout-align="center">
-  <md-card ng-repeat="info in allMobilesInfo">
+<div layout="row" layout-wrap layout-align="center">
+  <md-card ng-repeat="info in allMobilesInfo | matchedItemFilter: manufacturerArr: storageArr: osArr: cameraArr">
     <md-card-content layout="column" layout-align="center center">
       <img style="height:250px;width:220px" ng-src={{info.image.small}} class="md-card-image">
-      <div class="md-toolbar-tools usableTool" layout-align="center center">{{info.name}}</div>
+      <div class="md-toolbar-tools usableTool" layout-align="center center">{{info.name}}
+      </div>
       <div class="card-info">
-        <p>price : ${{info.price}}</p>
-        <p>Manufacturer : {{info.specs.manufacturer}}</p>
-        <p>Storage : {{info.specs.storage}} GB</p>
-        <p>Os : {{info.specs.os}}</p>
-        <p>Camera : {{info.specs.camera}} Pixel</p>
+        <p>price :${{info.price}}</p>
+        <p>Manufacturer :{{info.specs.manufacturer}}</p>
+        <p>Storage :{{info.specs.storage}} GB</p>
+        <p>Os :{{info.specs.os}}</p>
+        <p>Camera :{{info.specs.camera}} Pixel</p>
       </div>
       <md-button class="md-primary md-raised" ng-click="showMore($event,info)">Buy</md-button>
     </md-card-content>
   </md-card>
-</div> -->
-
-<div layout="row" layout-wrap layout-align="center">
-<md-card
-ng-repeat="info in allMobilesInfo | matchedItemFilter: manufacturerArr: storageArr: osArr: cameraArr">
-<md-card-content layout="column" layout-align="center center">
-<img style="height:250px;width:220px" ng-src={{info.image.small}}
-class="md-card-image">
-<div class="md-toolbar-tools usableTool" layout-align="center center">{{info.name}}
-</div>
-<div class="card-info">
-<p>price :${{info.price}}</p>
-<p>Manufacturer :{{info.specs.manufacturer}}</p>
-<p>Storage :{{info.specs.storage}} GB</p>
-<p>Os :{{info.specs.os}}</p>
-<p>Camera :{{info.specs.camera}} Pixel</p>
-</div>
-<md-button class="md-primary md-raised" ng-click="showMore($event,info)">Buy</md-button>
-</md-card-content>
-</md-card>
 </div>
