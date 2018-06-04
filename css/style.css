@@ -15,3 +15,16 @@
   font-size: 12px;
   font-weight: 600;
 }
+
+.resize {
+  margin-left: 325px;
+}
+
+md-sidenav, sideBarContent {
+  background-color: #2a3f54;
+  color: white;
+}
+
+.md-icon {
+  border-color: white !important;
+}
