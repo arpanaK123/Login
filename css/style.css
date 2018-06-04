@@ -17,7 +17,7 @@
 }
 
 .resize {
-  margin-left: 325px;
+  margin-left: 300px;
 }
 
 md-sidenav, .sideBarContent {
@@ -27,4 +27,7 @@ md-sidenav, .sideBarContent {
 
 .md-icon {
   border-color: white !important;
+}
+.side-menu{
+  margin-left: 35px;
 }

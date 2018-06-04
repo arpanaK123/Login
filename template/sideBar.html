@@ -2,28 +2,28 @@
   <md-content layout-margin class="sideBarContent">
     <h4>Manufacturer</h4>
     <hr>
-    <div ng-repeat="menuObj in allMobilesInfo | removeDuplicate:'manufacturer'">
+    <div class="side-menu" ng-repeat="menuObj in allMobilesInfo | removeDuplicate:'manufacturer'">
       <md-checkbox ng-click="onDisplaySelectedItems(menuObj.specs.manufacturer, 'manufacturer')">
         {{menuObj.specs.manufacturer}}
       </md-checkbox>
     </div>
     <h4>Storage</h4>
     <hr>
-    <div ng-repeat="menuObj in allMobilesInfo|removeDuplicate:'storage'">
+    <div class="side-menu" ng-repeat="menuObj in allMobilesInfo|removeDuplicate:'storage'">
       <md-checkbox ng-click="onDisplaySelectedItems(menuObj.specs.storage,'storage')">
         {{menuObj.specs.storage}}
       </md-checkbox>
     </div>
     <h4>Os</h4>
     <hr>
-    <div ng-repeat="menuObj in allMobilesInfo| removeDuplicate:'os'">
+    <div class="side-menu" ng-repeat="menuObj in allMobilesInfo| removeDuplicate:'os'">
       <md-checkbox ng-click="onDisplaySelectedItems(menuObj.specs.os,'os')">
         {{menuObj.specs.os}}
       </md-checkbox>
     </div>
     <h4>Camera</h4>
     <hr>
-    <div ng-repeat="menuObj in allMobilesInfo| removeDuplicate:'camera'">
+    <div class="side-menu" ng-repeat="menuObj in allMobilesInfo| removeDuplicate:'camera'">
       <md-checkbox ng-click="onDisplaySelectedItems(menuObj.specs.camera,'camera')">
         {{menuObj.specs.camera}}
       </md-checkbox>

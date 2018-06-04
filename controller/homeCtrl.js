@@ -1,10 +1,10 @@
 app.controller('homeCtrl', function($scope, $state, $mdSidenav, products) {
   $scope.toggleLeft = buildToggler('left');
-$scope.isSidebarOpen=false;
+  $scope.isSidebarOpen = false;
 
   function buildToggler(componentId) {
     return function() {
-      $scope.isSidebarOpen=!$scope.isSidebarOpen;
+      $scope.isSidebarOpen = !$scope.isSidebarOpen;
       $mdSidenav(componentId).toggle();
     };
   }
