@@ -18,9 +18,7 @@ app.filter('removeDuplicate', function() {
             filteredArr.push(newObj);
           }
         }
-
       }
-
     }
     return filteredArr;
   };
