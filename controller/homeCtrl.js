@@ -17,6 +17,14 @@ app.controller('homeCtrl', function($scope, $state, $mdSidenav, products) {
     $scope.allMobilesInfo = response;
     console.log('JSON response: ', response);
   });
+
+  $scope.stars=[{url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'}];
+
+  
   $scope.manufacturerArr = [];
   $scope.storageArr = [];
   $scope.osArr = [];
