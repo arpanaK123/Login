@@ -1,3 +1,12 @@
+.app-header {
+  position: fixed;
+  width: 100%;
+}
+
+.app-dashboard {
+  padding-top: 70px;
+}
+
 .card-data:hover {
   box-shadow: 0 0 35px 0 #d8d8d8;
   background-color: #e2e7e9;
@@ -28,21 +37,29 @@ md-sidenav, .sideBarContent {
 .md-icon {
   border-color: white !important;
 }
-.side-menu{
+
+.side-menu {
   margin-left: 35px;
 }
 
-::-webkit-scrollbar{
+/* the entire scrollbar */
+
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-track{
+
+/* the track (progress bar) of the scrollbar. */
+
+::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-::-webkit-scrollbar-thumb{
+/* the draggable scrolling handle. */
+
+::-webkit-scrollbar-thumb {
   background: #888
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: :#555;
 }
