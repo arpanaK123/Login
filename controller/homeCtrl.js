@@ -18,13 +18,13 @@ app.controller('homeCtrl', function($scope, $state, $mdSidenav, products) {
     console.log('JSON response: ', response);
   });
 
-  $scope.stars=[{url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'},
-  {url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'},
-  {url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'},
-  {url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'},
-  {url: 'bower_components/material-design-icons/toggle/svg/design/a.svg'}];
+  $scope.stars=[{url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'}];
 
-  
+
   $scope.manufacturerArr = [];
   $scope.storageArr = [];
   $scope.osArr = [];
