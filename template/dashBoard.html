@@ -2,9 +2,13 @@
   <md-card ng-repeat="info in allMobilesInfo | matchedItemFilter: manufacturerArr: storageArr: osArr: cameraArr">
     <md-card-content layout="column" layout-align="center center">
       <img style="height:250px;width:220px" ng-src={{info.image.small}} class="md-card-image">
-      <div class="md-toolbar-tools usableTool" layout-align="center center">{{info.name}}
-      </div>
-      <md-icon md-svg-icon="bower_components/material-design-icons/toggle/svg/design/a.svg"></md-icon>
+      <div class="md-toolbar-tools usableTool" layout-align="center center">{{info.name}}</div>
+        <div class="rating">
+          <span class="rating-label">rating:</span>
+          <div ng-repeat="star in stars" ng-init="starIndex=$index">
+            <md-icon ng-style="{'color':(starIndex<(info.rating)) ? 'gold':'lightgray'}" md-svg-icon="{{star.url}}"></md-icon>
+          </div>
+        </div>
       <div class="card-info">
         <p>price :${{info.price}}</p>
         <p>Manufacturer :{{info.specs.manufacturer}}</p>

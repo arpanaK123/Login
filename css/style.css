@@ -1,3 +1,12 @@
+.rating{
+  padding: 5px 0px;
+  display: flex;
+}
+.rating-label{
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
 .login-page {
   height: 100%;
   width: 100%;

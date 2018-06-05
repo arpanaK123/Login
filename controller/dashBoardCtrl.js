@@ -11,6 +11,11 @@ app.controller('dashboardController', function($scope, $mdDialog) {
       clickOutsideToClose: true,
     });
   };
+  $scope.star=[{url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
+  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'}];
 
   function dialogController($scope, data, $mdDialog) {
     $scope.data = data;
