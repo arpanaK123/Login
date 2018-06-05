@@ -1,3 +1,14 @@
+.login-page {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/d.jpg');
+}
+
+.login-form {
+  background-image: url('../assets/images/d.jpg');
+  padding-top: 60px;
+}
+
 .app-header {
   position: fixed;
   width: 100%;
