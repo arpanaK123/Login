@@ -8,6 +8,12 @@ app.controller('homeCtrl', function($scope, $state, $mdSidenav, products) {
       $mdSidenav(componentId).toggle();
     };
   }
+  $scope.additemArr = [];
+  $scope.addItemToCard = function(info) {
+    $scope.additemArr.push(info);
+    console.log('$scope.additemArr', $scope.additemArr);
+  };
+
 
   $scope.onLogout = function() {
     $state.go('login');
@@ -18,20 +24,22 @@ app.controller('homeCtrl', function($scope, $state, $mdSidenav, products) {
     console.log('JSON response: ', response);
   });
 
-  $scope.stars=[{url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
-  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
-  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
-  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
-  {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'}];
-
-$scope.product=[];
-$scope.addProduct=function(){
-  $scope.product.push({name:$scope.name, price:$scope.productPrice});
-  $scope.productName="";
-  $scope.productPrice="";
-
-};
-
+  $scope.stars = [{
+      url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'
+    },
+    {
+      url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'
+    },
+    {
+      url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'
+    },
+    {
+      url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'
+    },
+    {
+      url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'
+    }
+  ];
 
   $scope.manufacturerArr = [];
   $scope.storageArr = [];
@@ -69,4 +77,5 @@ $scope.addProduct=function(){
       arr.push(specsValue);
     }
   }
+
 });
