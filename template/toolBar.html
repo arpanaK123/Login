@@ -4,7 +4,18 @@
       <md-icon md-svg-icon="bower_components/material-design-icons/image/svg/design/menu.svg"></md-icon>
     </md-button>
     <span class="md-toolbar-tools">Mobile Online Shopping</span>
-    <md-icon md-svg-icon="bower_components/material-design-icons/action/svg/design/carrt.svg"></md-icon>
+    <md-icon md-svg-icon="bower_components/material-design-icons/action/svg/design/carrt.svg">
+    </md-icon>
+    <div>
+      <ul>
+        <li ng-repeat="product in products">
+          <span>{{product.name}}</span>
+          <span>{{product.price}}</span>
+          <span> <input type="number" min="0" step="any" ng-model="amount"></span>
+          <span>{{product.price*amount}}</span>
+        </li>
+      </ul>
+    </div>
     <md-button class="md-button" style="test-align:right" ng-click="onLogout()">Logout</md-button>
   </div>
 </md-toolbar>

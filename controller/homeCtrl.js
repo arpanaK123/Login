@@ -24,6 +24,14 @@ app.controller('homeCtrl', function($scope, $state, $mdSidenav, products) {
   {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'},
   {url: 'bower_components/material-design-icons/toggle/svg/design/star.svg'}];
 
+$scope.product=[];
+$scope.addProduct=function(){
+  $scope.product.push({name:$scope.name, price:$scope.productPrice});
+  $scope.productName="";
+  $scope.productPrice="";
+
+};
+
 
   $scope.manufacturerArr = [];
   $scope.storageArr = [];

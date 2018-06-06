@@ -11,11 +11,13 @@ app.controller('dashboardController', function($scope, $mdDialog) {
       clickOutsideToClose: true,
     });
   };
-  
+
   function dialogController($scope, data, $mdDialog) {
     $scope.data = data;
     $scope.cancel = function() {
       $mdDialog.cancel();
     };
   }
+
+  
 });
