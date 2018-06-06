@@ -1,12 +1,24 @@
-.rating{
+.add-item {
+  position: absolute;
+  right: 100px;
+  top: 0;
+  background-color: red;
+  padding: 1px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.rating {
   padding: 5px 0px;
   display: flex;
 }
-.rating-label{
+
+.rating-label {
   margin-top: 5px;
   font-size: 12px;
   font-weight: 600;
 }
+
 .login-page {
   height: 100%;
   width: 100%;
