@@ -8,6 +8,7 @@ app.controller('homeCtrl', function($scope, $state, $mdSidenav, products) {
       $mdSidenav(componentId).toggle();
     };
   }
+
   $scope.additemArr = [];
   $scope.addItemToCard = function(info) {
     $scope.additemArr.push(info);
