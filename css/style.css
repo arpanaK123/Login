@@ -1,3 +1,18 @@
+.cart-data {
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.cart-content {
+  width: 360px;
+  text-align: left;
+}
+
+.cart-img {
+  height: 50px;
+  width: 40px;
+}
+
 .add-item {
   position: absolute;
   right: 100px;
