@@ -35,7 +35,7 @@ app.controller('homeCtrl', function($scope, $state, $mdSidenav, products, $mdDia
     console.log('$scope.addedItemsArr', $scope.addedItemsArr);
   };
 
-  $scope.onLogOut = function() {
+  $scope.onLogout = function() {
     $state.go('login');
   };
   products.getData().then(function(response) {
