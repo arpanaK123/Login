@@ -19,13 +19,12 @@
       <div>
         <md-button class="md-primary md-raised" style="position:unset" ng-click="showMore($event,info)">Buy</md-button>
 
-        <md-button class="md-primary md-raised" style="position:unset" ng-click="addItemToCard(info)">add cart</md-button>
+        <md-button class="md-primary md-raised" style="position:unset" ng-click="onAddToCard(info)">add cart</md-button>
       </div>
     </md-card-content>
   </md-card>
   <div ng-if="(allMobilesInfo|matchedItemFilter:manufacturerArr: storageArr: osArr: cameraArr).length===0">
     <h2>Oops!!!!... data not found</h2>
-      <md-icon  style="test-align:center"
-       md-svg-icon="bower_components/material-design-icons/social/svg/design/a.svg"></md-icon>
+    <md-icon style="test-align:center" md-svg-icon="bower_components/material-design-icons/social/svg/design/a.svg"></md-icon>
   </div>
 </div>
