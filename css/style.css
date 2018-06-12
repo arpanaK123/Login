@@ -8,9 +8,19 @@
   text-align: left;
 }
 
-.cart-img {
+/* .cart-img {
   height: 50px;
   width: 40px;
+} */
+
+.cart-info {
+  padding-left: 41px;
+  margin-top: -10px;
+}
+
+.cart-img {
+  height: 121px;
+  width: 145px;
 }
 
 .add-item {
