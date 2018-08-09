@@ -22,8 +22,11 @@
             <div ng-message="required">Password Required(min length:06, maxlength:16)</div>
           </div>
         </md-input-container>
-        <md-button ng-disabled="!loginForm.$valid  || isMatchpasswordwithemail " ng-click="submit() " class="md-raised md-primary ">&nbsp Login &nbsp
+        <md-button ng-disabled="!loginForm.$valid" ng-click="submit() " class="md-raised md-primary ">&nbsp Login &nbsp
         </md-button>
+        <a href="#!/register" class="btn btn-link">Register</a>
+        <br></br>
+        <a href="#!/userverify"><p style="text-align:center">Forgot_Password</a>
       </form>
     </md-card-content>
   </md-card>

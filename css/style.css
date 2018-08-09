@@ -49,12 +49,40 @@
   width: 100%;
   background-image: url('../assets/images/d.jpg');
 }
+.register-page{
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/d.jpg');
+}
 
+.userverify-page{
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/d.jpg');
+}
+
+.resetpassword-page{
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/d.jpg');
+}
 .login-form {
   background-image: url('../assets/images/d.jpg');
   padding-top: 60px;
 }
+.register-form{
+  background-image: url('../assets/images/d.jpg');
+  padding-top: 60px;
+}
+.userverify-form{
+  background-image: url('../assets/images/d.jpg');
+  padding-top: 60px;
+}
 
+.resetpassword-form{
+  background-image: url('../assets/images/d.jpg');
+  padding-top: 60px;
+}
 .app-header {
   position: fixed;
   width: 100%;
@@ -86,7 +114,7 @@
   margin-left: 300px;
 }
 
-md-sidenav, .sideBarContent {
+.md-sidenav, .sideBarContent {
   background-color: #2a3f54;
   color: white;
 }
